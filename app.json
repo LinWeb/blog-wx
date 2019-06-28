@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/arrange/arrange",
+    "pages/category/category","pages/about/about",
+    "pages/logs/logs"
+  ],
+  "subpackages":[
+    {
+      "root":"articleDetail",
+      "pages":[
+        "pages/index"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+  "selectedColor": "#1296db",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath":"imgs/tabBar/home.png",
+        "selectedIconPath": "imgs/tabBar/home-select.png"
+      },
+      {
+        "text": "归档",
+        "pagePath":"pages/arrange/arrange",
+        "iconPath": "imgs/tabBar/arrange.png",
+        "selectedIconPath": "imgs/tabBar/arrange-select.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/category/category",
+        "iconPath": "imgs/tabBar/category.png",
+        "selectedIconPath": "imgs/tabBar/category-select.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/about",
+        "iconPath": "imgs/tabBar/about.png",
+        "selectedIconPath": "imgs/tabBar/about-select.png"
+      }
+    ]
+  }
+}

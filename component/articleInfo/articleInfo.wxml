@@ -1,0 +1,17 @@
+<wxs src="../../modules/colors.wxs" module="module" />
+<view class='article-info'>
+  <view class='readCount item'>
+    <icon class='iconfont iconyanjing' /> {{readCount}}
+  </view>
+  <view class='commentCount item'>
+    <icon class='iconfont iconpinglun' /> {{commentCount}}
+  </view>
+  <view class='tags item'>
+    <icon class='iconfont iconbiaoqian' style='margin-right:10rpx' />
+    <text class='tag-item' wx:for="{{tags}}" wx:key="index" style="color:{{module.colors[index%11]}};border:{{'1rpx solid '+module.colors[index%11]}}">{{item.name}}</text>
+  </view>
+  <view class='categories item'>
+    <icon class='iconfont icontubiao113' style='margin-right:10rpx' />
+    <text class='category-item' wx:for="{{categories}}" wx:key="index" style="background-color:{{module.colors[index%11]}};border:'1rpx solid '+{{module.colors[index%11]}}">{{item.name}}</text>
+  </view>
+</view>

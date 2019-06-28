@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="home-container">
+  <view class='article-list'>
+    <view class='article-item' wx:for="{{articleListData}}" wx:key="index">
+     <navigator path=""></navigator>
+      <view class='title'>{{item.title}}</view>
+      <view class='time'>{{item.createdAt}}</view>
+      <view class='content'>
+        <import src="/towxml/entry.wxml" />
+        <template is="entry" data="{{...item.content}}" />
+      </view>
+      <article-info readCount="{{item.readCount}}" commentCount="{{item.comments.length}}" tags="{{item.tags}}" categories="{{item.categories}}"></article-info>
+    </view>
+  </view>
+</view>

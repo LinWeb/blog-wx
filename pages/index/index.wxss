@@ -1,0 +1,30 @@
+.article-list {
+  padding: 0 32rpx;
+}
+
+.article-item {
+  margin: 32rpx 0;
+  border: 1rpx solid #eee;
+  padding: 22rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.time {
+  font-size: 30rpx;
+  width: 80%;
+  margin: 18rpx auto 0;
+  text-align: center;
+}
+
+.content {
+  height: 340rpx;
+  overflow: hidden;
+  margin: 18rpx auto 32rpx;
+}
